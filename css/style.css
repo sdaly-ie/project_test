@@ -1,0 +1,53 @@
+.timeline {
+    font-family: Arial, sans-serif;
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.timeline ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline li {
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px; /* centers the circle on the border-line */
+    top: 5px; /* adjust this to move the circle up or down */
+}
+
+.timeline li .date {
+    background-color: #ddd;
+    color: #333; /* changed from #fff to #333 for better visibility */
+    padding: 5px 10px;
+    position: absolute;
+    left: -75px; /* adjusted to move the date further to the left */
+    border-radius: 4px;
+}
+
+.timeline li .description {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline li:last-child {
+    border-left: none;
+}
+
+
