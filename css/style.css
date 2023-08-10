@@ -1,0 +1,38 @@
+#image {
+    background-image: url('../images/lancaster-night-time.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.bullet-line-list {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    margin-left: 20px; /* to make room for the line */
+}
+
+.bullet-line-list:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px; /* position of the vertical line */
+    bottom: 0;
+    width: 2px;
+    background-color: #333;
+}
+
+.bullet-line-list li {
+    padding-left: 15px; /* provide some padding next to the bullet */
+    margin-bottom: 10px; 
+    position: relative;
+    background-color: #FFF; /* Ensures that the line does not cut through the bullet */
+}
+
+.bullet-line-list li:before {
+    content: "\2022";
+    font-size: 20px;
+    position: absolute;
+    left: -25px; /* position of the bullet */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+}
