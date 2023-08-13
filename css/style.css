@@ -1,38 +1,57 @@
-#image {
-    background-image: url('../images/lancaster-night-time.jpg') no-repeat center center/cover;
-    position: relative;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
-.bullet-line-list {
-    list-style-type: none;
+* {
+    margin: 0;
     padding: 0;
-    position: relative;
-    margin-left: 20px; /* to make room for the line */
+    border: none;
 }
 
-.bullet-line-list:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -10px; /* position of the vertical line */
-    bottom: 0;
-    width: 2px;
-    background-color: #333;
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
 }
 
-.bullet-line-list li {
-    padding-left: 15px; /* provide some padding next to the bullet */
-    margin-bottom: 10px; 
-    position: relative;
-    background-color: #FFF; /* Ensures that the line does not cut through the bullet */
+/* headings and logo */
+
+h1, h2 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
 }
 
-.bullet-line-list li:before {
-    content: "\2022";
-    font-size: 20px;
-    position: absolute;
-    left: -25px; /* position of the bullet */
-    top: 50%;
-    transform: translateY(-50%);
-    color: #333;
+#logo {
+    float: left;
+    font-size: 280%;
+}
+
+/* navigation links */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#menu, #logo {
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
