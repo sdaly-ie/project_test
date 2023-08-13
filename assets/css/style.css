@@ -1,9 +1,30 @@
 /* headings and logo */
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fafafa;
+    /* Keeps header above other page content */
+    z-index: 1000;    
+    /* Add other styles such as padding, height, etc. as needed */
+}
+
 h1, h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
+}
+
+#feature {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 200%;
+}
+
+p {
+    line-height: 2;
 }
 
 #logo {
@@ -18,9 +39,10 @@ h1, h2 {
 
 #menu {
     display: flex;
-    flex-direction: flex;
-    font-size: 110%;
+    flex-wrap: wrap;
+    font-size: 125%;
     letter-spacing: 4px;
+    justify-content: flex-end;
 }
 
 #menu, #logo {
@@ -49,16 +71,19 @@ h1, h2 {
 }
 
 .hero {
+    top: 100px;
     background-image: url("images/avro-night-image.jpg");
     width: 100%;
-    background-size: cover;
-    background-position: center;
+    position: relative;
     background-repeat: no-repeat;
-    height: 500px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 600px;
+}
+
+blockquote h3, blockquote footer {
+    padding: 15px;
+    margin: 15px;
+    font-style: italic;
     text-align: center;
+    color: #404040;
+    white-space: normal;
 }
