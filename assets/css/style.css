@@ -27,6 +27,16 @@ p {
     line-height: 2;
 }
 
+tr {
+    line-height: 2;
+}
+
+th {
+    width: 155px;
+    text-align: right;
+    border-spacing: 10px;
+}
+
 #logo {
     float: left;
     font-size: 250%;
@@ -70,13 +80,31 @@ p {
     border-bottom: 1px solid #3a3a3a;
 }
 
+/* Default height for larger screens */
 .hero {
     top: 100px;
     background-image: url("images/avro-night-image.jpg");
+    height: 400px;
     width: 100%;
     position: relative;
     background-repeat: no-repeat;
-    height: 600px;
+}
+
+
+.image-container {
+    width: 300px; 
+}
+
+.image-container img {
+    width: 100%; /* This makes the image responsive */
+    height: auto; /* This maintains the image's aspect ratio */
+}
+
+/* Adjusted height for smaller screens */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 250px;
+    }
 }
 
 blockquote h3, blockquote footer {
