@@ -1,15 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
-
-body {
-    font-family: Lato, sans-serif;
-    font-weight: 300;
-    color: #3a3a3a;
-}
-
 /* headings and logo */
 
 h1, h2 {
-    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
@@ -17,22 +8,29 @@ h1, h2 {
 
 #logo {
     float: left;
-    font-size: 280%;
+    font-size: 250%;
+    margin: 10px;
+    padding: 20px;
+    line-height: 75px;
 }
 
 /* navigation links */
 
 #menu {
+    display: flex;
+    flex-direction: flex;
     font-size: 110%;
     letter-spacing: 4px;
 }
 
 #menu, #logo {
+    margin: auto;
+    padding: 20px;
     line-height: 75px;
 }
 
 #menu li {
-    float: right;
+
     list-style-type: none;
     margin-right: 30px;
 }
@@ -50,8 +48,17 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-
-#lancaster-image {
+.hero {
+    background-image: url("images/avro-night-image.jpg");
     width: 100%;
-    background: url("css/images/avro-night-image.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
